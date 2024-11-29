@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'Itim';
+  src: url('../assets/fonts/Itim-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: 'Itim', sans-serif;
+}
+
+
+/* Custom scrollbar styles for webkit browsers */
+.category-nav {
+    height: 500px; /* Set your desired height */
+    overflow-y: auto; /* Enable vertical scrolling */
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+  }
+  
+  /* Webkit (Chrome, Safari) */
+  .category-nav::-webkit-scrollbar {
+    width: 8px; /* Width of the scrollbar */
+  }
+  
+  .category-nav::-webkit-scrollbar-track {
+    background: #f1f1f1; /* Background of the scrollbar track */
+    border-radius: 10px; /* Rounded corners for the track */
+  }
+  
+  .category-nav::-webkit-scrollbar-thumb {
+    background: #888; /* Color of the scrollbar thumb */
+    border-radius: 10px; /* Rounded corners for the thumb */
+  }
+  
+  .category-nav::-webkit-scrollbar-thumb:hover {
+    background: #555; /* Color when hovered */
+  }
+  
+  /* Firefox */
+  .category-nav {
+    scrollbar-width: thin; /* Width of the scrollbar */
+    scrollbar-color: #888 #f1f1f1; /* Thumb color and track color */
+  }
+  
+  /* Rounded corners in Firefox */
+  .category-nav::-moz-scrollbar {
+    border-radius: 10px; /* Firefox doesn't support this directly */
+  }
+  
